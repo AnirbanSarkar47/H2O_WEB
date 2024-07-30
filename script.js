@@ -344,13 +344,13 @@ gsap.from("#bottom>h1",{
     }
 
 })
-gsap.from("#text_page4>p,#form",{
+gsap.from("#text_page4>p",{
     // y:500,
     duration:3,
     opacity: 0,
     stagger:0.3,
     scrollTrigger:{
-        trigger:"#center>p,#form",
+        trigger:"#center>p",
         start:"0% 50%",
         end: "-40% 50%",
         // scrub:2,

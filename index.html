@@ -193,13 +193,13 @@
                     
                     <form id="form"  action="" method="">
                         <label  for="name" class="form_text">Name</label>
-                        <input focus name="name" type="text" id="name_input" placeholder="Enter Name" data-sb-validations="required">
+                        <input name="name" type="text" id="name_input" placeholder="Enter Name" required>
                         
                         <label  aria-selected="true" for="email" class="form_text">E mail</label>
-                        <input focus name="email" type="text" id="email_input" placeholder="Enter Email" data-sb-validations="required,email">
+                        <input  name="email" type="text" id="email_input" placeholder="Enter Email" required>
                         
                         <label  for="message" class="form_text">Message</label>
-                        <textarea focus name="message" id="message_input" placeholder="Enter Your message here..." cols="30" rows="10"></textarea>
+                        <textarea focus name="message" id="message_input" placeholder="Enter Your message here..." cols="30" rows="10" required></textarea>
         
                         <button id="button" type="submit">Send</button>
                         <p id="result">Data Submitted Successfully !!!!!</p>

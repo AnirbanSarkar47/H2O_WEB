@@ -1360,6 +1360,7 @@ html,body{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        z-index: 99;
        
     }
     #text_page4 p >span {
@@ -1419,7 +1420,7 @@ html,body{
         margin-right: 4vw;
         margin-left: 2.5%;
         margin-bottom: 15vw;
-        /* z-index: 99 !important; */
+        z-index: 99 !important;
         
       }
     .form_text{
@@ -1446,7 +1447,7 @@ html,body{
         border: rgb(0, 170, 255) 3px solid;
         background-color: #0000008b;
         color: white;
-        /* z-index: 1111 !important; */
+        z-index: 1111 !important;
       }
       
       #form > #email_input {
@@ -1459,7 +1460,7 @@ html,body{
         border: rgb(0, 170, 255) 3px solid;
         background-color: #0000008b;
         color: white;
-        /* z-index: 99 !important; */
+        z-index: 99 !important;
       }
      
       #form > #message_input {
@@ -1471,7 +1472,7 @@ html,body{
         border: rgb(0, 170, 255) 3px solid;
         background-color: #0000008b;
         color: white;
-        /* z-index: 99 !important; */
+        z-index: 99 !important;
     }
     #button {
         height: 10vw;
