@@ -122,46 +122,46 @@ formMessage.addEventListener("click",(e)=>{
 
 
 
-formButton.addEventListener('click',(e)=>{
-    e.preventDefault();
-    if(formName.value ===""||formEmail.value ===""||formMessage.value ===""){
-        result.innerHTML="Enter Data First !!!!!!"
-        result.style.color="red"
-        result.style.display = "block"
-        const check = setTimeout(()=>{
+// formButton.addEventListener('click',(e)=>{
+//     e.preventDefault();
+//     if(formName.value ===""||formEmail.value ===""||formMessage.value ===""){
+//         result.innerHTML="Enter Data First !!!!!!"
+//         result.style.color="red"
+//         result.style.display = "block"
+//         const check = setTimeout(()=>{
 
-            result.style.display = "none";
+//             result.style.display = "none";
 
 
 
-        },5000)
-        check();
+//         },5000)
+//         check();
 
-    }
-    else{
-        result.innerHTML="Data Submitted Successfully !!!!!"
-        result.style.color="#00ff51"
-        result.style.display = "block"
+//     }
+//     else{
+//         result.innerHTML="Data Submitted Successfully !!!!!"
+//         result.style.color="#00ff51"
+//         result.style.display = "block"
         
-        const dataClear = setTimeout(()=>{
-            formName.value = "";
-            formEmail.value = "";
-            formMessage.value = "";
+//         const dataClear = setTimeout(()=>{
+//             formName.value = "";
+//             formEmail.value = "";
+//             formMessage.value = "";
 
-            result.style.display = "none";
+//             result.style.display = "none";
 
 
 
-        },5000)
-        dataClear();
+//         },5000)
+//         dataClear();
 
-    }
+//     }
     
     
     
 
 
-});
+// });
 
 
 
