@@ -1305,18 +1305,18 @@ html,body{
     transition: ease-in 0.2s;
   }
 
-  #form p {
+  /* #form p {
     font-size: 1vw;
     width: 80%;
     height: 2vw;
     margin-top: 1vw;
     color: #00ff51;
-    display: none;
+    display: none; */
     /* position: absolute; */
     /* background-color: #088395; */
     
 
-  }
+  /* } */
 
   /* 4th page responsive ************************************************************** */
   @media only screen and (max-width: 600px){
