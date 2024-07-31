@@ -1343,7 +1343,7 @@ html,body{
     #form p{
         margin-top: 5vw;
         color: #00ff51;
-        display: block;
+        display: none;
     }
 
 
