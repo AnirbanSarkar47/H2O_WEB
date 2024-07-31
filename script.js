@@ -69,33 +69,7 @@ mouseEffectPage1();
 
 
 
-let TL = gsap.timeline({scrollTrigger:{
-    trigger:"#page4",
-    start:"60% 60%",
-    end:"100% 50%",
-    scrub:2,
-    pin:true,
-    // markers:true
-}})
 
-TL
-.to("#top",{
-    top:"-50%",
-}, "a")
-
-.to("#bottom",{
-    bottom:"-50%",
-},"a")
-.to("#t-t",{
-    top:"80%"
-},"a")
-.to("#b-t",{
-    bottom:"-80%"
-},"a")
-// .from("#center > h2 ",{
-//     y:500,
-    
-// },"a")
 
 
 const formButton = document.querySelector("#button");
@@ -104,21 +78,21 @@ const formEmail = document.querySelector("#email_input");
 const formMessage = document.querySelector("#message_input");
 const result = document.querySelector("#result");
 
-formName.addEventListener("click",(e)=>{
-    e.preventDefault();
-    formName.focus();
+// formName.addEventListener("click",(e)=>{
+//     e.preventDefault();
+//     formName.focus();
 
-})
-formEmail.addEventListener("click",(e)=>{
-    e.preventDefault();
-    formEmail.focus();
+// })
+// formEmail.addEventListener("click",(e)=>{
+//     e.preventDefault();
+//     formEmail.focus();
 
-})
-formMessage.addEventListener("click",(e)=>{
-    e.preventDefault();
-    formMessage.focus();
+// })
+// formMessage.addEventListener("click",(e)=>{
+//     e.preventDefault();
+//     formMessage.focus();
 
-})
+// })
 
 
 
@@ -314,45 +288,17 @@ gsap.from("#container",{
 
 
 
-gsap.from("#top>h1",{
-    y:-100,
-    duration:3,
-    opacity: 0,
-    stagger:0.3,
-    scrollTrigger:{
-        trigger:"#top>h1",
-        start:"-530% 50%",
-        end: "-520% 50%",
-        // scrub:2,
-        
-        // markers:true
-    }
 
-})
-gsap.from("#bottom>h1",{
-    y:100,
-    duration:3,
-    opacity: 0,
-    stagger:0.3,
-    scrollTrigger:{
-        trigger:"#top>h1",
-        start:"-530% 50%",
-        end: "-520% 50%",
-        // scrub:2,
-        
-        // markers:true
-    }
 
-})
-gsap.from("#text_page4>p",{
-    // y:500,
+gsap.from("#text_page4>p,#form",{
+     y:500,
     duration:3,
     opacity: 0,
     stagger:0.3,
     scrollTrigger:{
-        trigger:"#center>p",
-        start:"0% 50%",
-        end: "-40% 50%",
+        trigger:"#text_page4>p",
+        start:"-220% 90%",
+        end: "70% 50%",
         // scrub:2,
         
         // markers:true
