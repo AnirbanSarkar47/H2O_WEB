@@ -204,7 +204,7 @@ gsap.from("#t-t,#t-t-2",{
     opacity:0,
     duration:1.5,
     scrollTrigger:{
-        trigger:"#img1_page2,#img2_page2",
+        trigger:"#t-t",
         start:"50% 50%",
         end: "70% 50%",
         // scrub:2,
@@ -219,7 +219,7 @@ gsap.from("#b-t",{
     opacity:0,
     duration:1.5,
     scrollTrigger:{
-        trigger:"#img1_page2,#img2_page2",
+        trigger:"#t-t",
         start:"50% 50%",
         end: "70% 50%",
         // scrub:2,
@@ -235,7 +235,7 @@ gsap.from("#heading_page2>h1",{
     opacity:0,
     duration:1.5,
     scrollTrigger:{
-        trigger:"#img1_page2,#img2_page2",
+        trigger:".part1>p,.part2>p",
         start:"50% 50%",
         end: "70% 50%",
         // scrub:2,
@@ -264,7 +264,7 @@ gsap.from(".part1>p,.part2>p",{
 gsap.from("#img1_page2,#img2_page2",{
     // y:300,
     opacity:-3,
-    duration:5,
+    duration:2,
     // stagger:0.3,
     dealy:2,
     scrollTrigger:{
