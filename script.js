@@ -66,6 +66,43 @@ mouseEffectPage1();
 
 
 
+let TL = gsap.timeline({scrollTrigger:{
+    trigger:"#page2",
+    start:"50% 50%",
+    end:"100% 50%",
+    scrub:2,
+    pin:true,
+    // markers:true
+}})
+
+TL
+.to("#top",{
+    top:"-50%",
+}, "a")
+
+.to("#bottom",{
+    bottom:"-50%",
+},"a")
+.to("#t-t",{
+    top:"80%"
+},"a")
+.to("#b-t",{
+    bottom:"-80%"
+},"a")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -162,14 +199,43 @@ tl.from("#leftelement>p",{
 
 
 // page 2
+gsap.from("#t-t,#t-t-2",{
+    y:-500,
+    opacity:0,
+    duration:1.5,
+    scrollTrigger:{
+        trigger:"#t-t,#t-t-2",
+        start:"50% 50%",
+        end: "70% 50%",
+        // scrub:2,
+        
+        // markers:true
+    }
+    
 
+})
+gsap.from("#b-t",{
+    y:500,
+    opacity:0,
+    duration:1.5,
+    scrollTrigger:{
+        trigger:"#t-t,#t-t-2",
+        start:"50% 50%",
+        end: "70% 50%",
+        // scrub:2,
+        
+        // markers:true
+    }
+    
+
+})
 
 gsap.from("#heading_page2>h1",{
     y:100,
     opacity:0,
     duration:1.5,
     scrollTrigger:{
-        trigger:"#heading_page2>h1",
+        trigger:"#img1_page2,#img2_page2",
         start:"50% 50%",
         end: "70% 50%",
         // scrub:2,
@@ -181,13 +247,13 @@ gsap.from("#heading_page2>h1",{
 })
 
 gsap.from(".part1>p,.part2>p",{
-    y:100,
+    y:500,
     opacity:0,
     duration:1.5,
     scrollTrigger:{
         trigger:".part1>p,.part2>p",
-        start:"-20% 50%",
-        end: "100% 50%",
+        start:"-50% 50%",
+        end: "70% 50%",
         // scrub:2,
         
         // markers:true
@@ -198,11 +264,11 @@ gsap.from(".part1>p,.part2>p",{
 gsap.from("#img1_page2,#img2_page2",{
     // y:300,
     opacity:-3,
-    duration:3,
+    duration:5,
     // stagger:0.3,
     dealy:2,
     scrollTrigger:{
-        trigger:"#img1_page2,#img2_page2",
+        trigger:".part1>p,.part2>p",
         start:"-50% 50%",
         end: "70% 50%",
         // scrub:2,
