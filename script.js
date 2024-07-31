@@ -72,70 +72,56 @@ mouseEffectPage1();
 
 
 
+const formName = document.querySelector("#name");
+const formEmail = document.querySelector("#email");
+const formMessage = document.querySelector("#message");
 const formButton = document.querySelector("#button");
-const formName = document.querySelector("#name_input");
-const formEmail = document.querySelector("#email_input");
-const formMessage = document.querySelector("#message_input");
 const result = document.querySelector("#result");
 
-// formName.addEventListener("click",(e)=>{
-//     e.preventDefault();
-//     formName.focus();
-
-// })
-// formEmail.addEventListener("click",(e)=>{
-//     e.preventDefault();
-//     formEmail.focus();
-
-// })
-// formMessage.addEventListener("click",(e)=>{
-//     e.preventDefault();
-//     formMessage.focus();
-
-// })
 
 
 
-// formButton.addEventListener('click',(e)=>{
-//     e.preventDefault();
-//     if(formName.value ===""||formEmail.value ===""||formMessage.value ===""){
-//         result.innerHTML="Enter Data First !!!!!!"
-//         result.style.color="red"
-//         result.style.display = "block"
-//         const check = setTimeout(()=>{
 
-//             result.style.display = "none";
+formButton.addEventListener('click',(e)=>{
+    e.preventDefault();
+    if(formName.value ===""||formEmail.value ===""||formMessage.value ===""){
+        result.innerHTML="Enter Data First !!!!!!"
+        result.style.color="red"
+        result.style.display = "block"
+        const check = setTimeout(()=>{
+
+            result.style.display = "none";
 
 
 
-//         },5000)
-//         check();
+        },5000)
+        check();
 
-//     }
-//     else{
-//         result.innerHTML="Data Submitted Successfully !!!!!"
-//         result.style.color="#00ff51"
-//         result.style.display = "block"
+    }
+    else{
+        result.innerHTML="Data Submitted Successfully !!!!!"
+        result.style.color="#00ff51"
+        result.style.display = "block"
         
-//         const dataClear = setTimeout(()=>{
-//             formName.value = "";
-//             formEmail.value = "";
-//             formMessage.value = "";
+        const dataClear = setTimeout(()=>{
+            formName.value = "";
+            formEmail.value = "";
+            formMessage.value = "";
 
-//             result.style.display = "none";
+            result.style.display = "none";
 
 
 
-//         },5000)
-//         dataClear();
+        },5000)
+        dataClear();
 
-//     }
+    }
     
     
     
 
 
-// });
+});
 
 
 
