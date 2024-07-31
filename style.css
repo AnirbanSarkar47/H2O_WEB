@@ -1116,6 +1116,7 @@ html,body{
     font-family: "Belanosima", sans-serif;
     /* border: 1px solid red; */
     margin-left: 2vw;
+    text-transform: capitalize;
     
 
 
@@ -1197,11 +1198,153 @@ html,body{
 
     
 }
-
+#form p{
+    margin-top: 1.5vw;
+    color: #00ff51;
+    display: none;
+}
 
 
   /* 4th page responsive ************************************************************** */
   @media only screen and (max-width: 600px){
+    #page4 {
+        width: 100%;
+        height: 100%;
+        background-color: #1B1A17;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        
+    }
+
+    #leftSide_page4{
+        width: 100%;
+        height: 35%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    
+    
+    }
+    #text_page4{
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid rgb(0, 255, 200); */
+        margin-right: 2vw;
+    
+    }
+    #text_page4 > p{
+        width: 100%;
+        height: 35vw;
+        font-size: 5vw;
+        font-family: "Belanosima", sans-serif;
+        /* border: 1px solid rgb(0, 217, 255); */
+        padding-left: 2vw;
+        text-align: justify;
+
+    
+    
+    }
+    #text_page4 > p >span{
+        font-size: 10vw;
+        text-shadow: 0 0 10px  rgb(0, 170, 255), 0 0 10px  rgb(0, 170, 255), 0 0 0px rgb(0, 170, 255);
+        font-family: "Belanosima", sans-serif;
+        /* border: 1px solid red; */
+        /* margin-left: 2vw */
+        margin-left: -1vw;
+        text-transform: capitalize;
+        
+    
+    
+    
+    }
+
+    #rightside_page4{
+        width: 100%;
+        height: 60%;
+        /* border: 1px solid rgb(0, 217, 255); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Belanosima", sans-serif;
+    
+    
+    }
+    #form{
+        width: 85%;
+        height: 95%;
+        border: 1px solid rgb(253, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 1vw;
+        background-color: #000000;
+    
+    
+    }
+    #name{
+        width: 80%;
+        height: 10vw;
+        margin-bottom: 5vw;
+        border: 3px solid rgb(0, 204, 255);
+        background-color: #000000c5;
+        padding: 1.2vw;
+        color: rgb(255, 252, 252);
+        border-radius: 0.5vw;
+    
+    }
+    #email{
+        width: 80%;
+        height: 10vw;
+        margin-bottom: 5vw;
+        border: 3px solid rgb(0, 204, 255);
+        background-color: #000000c5;
+        padding: 1.2vw;
+        color: rgb(255, 252, 252);
+        border-radius: 0.5vw;
+    }
+    #message{
+        width: 80%;
+        height: 20vw;
+        margin-bottom: 2vw;
+        border: 3px solid rgb(0, 204, 255);
+        background-color: #000000c5;
+        padding: 1.2vw;
+        color: rgb(255, 252, 252);
+        border-radius: .5vw;
+    }
+    #button{
+        height: 10vw;
+        width: 25vw;
+         font-family: "Belanosima", sans-serif;
+        border: rgb(0, 170, 255) solid 3px;
+        border-radius: 10px;
+        margin-top: 5vw;
+    }
+    #button:hover {
+        cursor: pointer;
+        color: #ffffff;
+        background-color: rgb(0, 170, 255);
+        border-color: #ffffff;
+        transition: ease-in 0.2s;
+      }
+    #form >label{
+        font-size: 7vw;
+        margin-bottom: .5vw;
+    
+    
+        
+    }
+    #form p{
+        margin-top: 5vw;
+        color: #00ff51;
+        display: block;
+    }
 
 
     
