@@ -236,7 +236,7 @@ gsap.from("#heading_page2>h1",{
     duration:1.5,
     scrollTrigger:{
         trigger:".part1>p,.part2>p",
-        start:"50% 50%",
+        start:"-50% 50%",
         end: "70% 50%",
         // scrub:2,
         
